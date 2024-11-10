@@ -1,0 +1,36 @@
+% 202411-industrial-software-meeting.tex
+
+% !TEX program = xelatex
+\documentclass[]{beamer}
+
+\input{preamble}
+\input{newcommands}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[]{数据库系统事务一致性验证问题研究}
+\subtitle{\teal{(工业软件产教联合主题交流会)}}
+
+\author[魏恒峰]{魏恒峰}
+\titlegraphic{
+  \includegraphics[height = 1.5cm]{figs/nju-logo-purple}~
+  \includegraphics[height = 1.5cm]{figs/software-logo}}
+\institute{hfwei@nju.edu.cn}
+\date{\zhtoday}
+%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+%%%%%%%%%%%%%%%%%%%%
+\input{sections/intro}
+\input{sections/db-history}
+\input{sections/db-correctness}
+%%%%%%%%%%%%%%%%%%%%
+\thankyou{}
+%%%%%%%%%%%%%%%%%%%%
+% cite references using \ncite{} and compile with biber
+% \begin{frame}[allowframebreaks]
+%   \printbibliography
+% \end{frame}
+%%%%%%%%%%%%%%%%%%%%
+% \appendix
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%

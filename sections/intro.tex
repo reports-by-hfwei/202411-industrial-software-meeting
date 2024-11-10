@@ -1,9 +1,52 @@
 % intro.tex
 
 %%%%%%%%%%%%%%%%%%%%
-\begin{frame}{What is Beamer?}
+\begin{frame}{}
   \begin{center}
-    \href{https://ctan.math.washington.edu/tex-archive/macros/latex/contrib/beamer/doc/beameruserguide.pdf}{Beamer User Guide}
+    (使用\blue{\bf 形式化方法理论与技术})
+    解决\purple{\bf 分布式系统}中的\red{\bf 数据一致性}问题
   \end{center}
+
+  \begin{columns}
+    \column{0.50\textwidth}
+      \fig{width=0.90\textwidth}{figs/distributed-systems}
+    \column{0.50\textwidth}
+      \fig{width=0.90\textwidth}{figs/toolbox}
+  \end{columns}
+
+  \begin{center}
+    \teal{\bf 数据副本} 带来了 \red{\bf 数据一致性}问题
+  \end{center}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+  \fig{width = 0.85\textwidth}{figs/db-si}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+  \begin{center}
+    \red{\LARGE 正确吗?}
+
+    \fig{width = 0.50\textwidth}{figs/bug}
+  \end{center}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+  \begin{center}
+    \fig{width = 0.50\textwidth}{figs/correctness}
+  \end{center}
+
+  \begin{itemize}
+    \centering
+    \setlength{\itemsep}{10pt}
+    \item \blue{\bf 数据库系统}实现正确了吗?
+    \item \red{\bf 客户端程序}编写正确了吗?
+  \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%

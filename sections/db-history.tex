@@ -1,0 +1,160 @@
+% db-history.tex
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+  \begin{itemize}
+    \centering
+    \item \blue{\bf 数据库系统}实现正确了吗?
+  \end{itemize}
+
+  \begin{center}
+    \fig{width = 0.50\textwidth}{figs/correctness}
+  \end{center}
+
+	\begin{center}
+		数据库系统通过 \cyan{事务} 与 \purple{\bf 隔离级别} 来保证 \red{数据一致性}
+	\end{center}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+  \fig{width = 0.80\textwidth}{figs/db-si}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+  \fig{width = 0.95\textwidth}{figs/db-si-violations}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+	\fig{width = 0.90\textwidth}{figs/problem}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+	\begin{center}
+		\fig{width = 0.90\textwidth}{figs/polysi-checker-conclusion}
+
+		\vspace{5pt}
+		\ncite{PolySI@VLDB'2023}
+
+		\fig{width = 0.20\textwidth}{figs/sat-solver}
+	\end{center}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+	\begin{columns}
+		\column{0.33\textwidth}
+		  \fig{width = 1.00\textwidth}{figs/polysi-runtime}
+			\begin{center}
+				时间
+			\end{center}
+		\column{0.33\textwidth}
+		  \fig{width = 1.00\textwidth}{figs/polysi-memory}
+			\begin{center}
+				内存
+			\end{center}
+		\column{0.33\textwidth}
+		  \fig{width = 1.00\textwidth}{figs/polysi-scalability}
+			\begin{center}
+				可扩展性
+			\end{center}
+	\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+	\begin{center}
+		\fig{width = 0.90\textwidth}{figs/hierarchy}
+
+		\vspace{5pt}
+		\ncite{Plume@OOPSLA'2024}
+	\end{center}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+	\begin{center}
+		\fig{width = 1.00\textwidth}{figs/taps}
+	\end{center}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+	\begin{columns}
+		\column{0.50\textwidth}
+			\fig{width = 1.00\textwidth}{figs/taps}
+		\column{0.50\textwidth}
+			\fig{width = 1.00\textwidth}{figs/taps-vis}
+	\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+	\begin{center}
+		如何利用 \blue{\bf 数据异常}\red{\bf 全面、准确}地定义这些事务隔离级别
+	\end{center}
+
+	\begin{center}
+		\fig{width = 0.40\textwidth}{figs/iso-taps}
+	\end{center}
+
+	\begin{columns}
+		\column{0.50\textwidth}
+			\fig{width = 1.00\textwidth}{figs/taps}
+		\column{0.50\textwidth}
+			\fig{width = 1.00\textwidth}{figs/taps-vis}
+	\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+	\fig{width = 0.90\textwidth}{figs/taps-exps}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+	\fig{width = 0.90\textwidth}{figs/taps-bugs}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+	\begin{columns}
+		\column{0.50\textwidth}
+			\fig{width = 1.00\textwidth}{figs/plume-time}
+			\begin{center}
+				时间
+			\end{center}
+		\column{0.50\textwidth}
+			\fig{width = 1.00\textwidth}{figs/plume-memory}
+			\begin{center}
+				内存
+			\end{center}
+	\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+	\begin{center}
+		\fig{width = 0.70\textwidth}{figs/isovista}
+
+		\vspace{5pt}
+		\ncite{IsoVista@VLDB'2024 (Demo)}
+	\end{center}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
