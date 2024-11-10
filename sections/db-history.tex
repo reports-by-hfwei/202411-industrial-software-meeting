@@ -12,26 +12,38 @@
   \end{center}
 
 	\begin{center}
-		数据库系统通过 \cyan{事务} 与 \purple{\bf 隔离级别} 来保证 \red{数据一致性}
+		数据库系统通过\cyan{事务}与\purple{\bf 隔离级别} (Isolation Levels) 保障\red{数据的正确性}
 	\end{center}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%
 \begin{frame}{}
-  \fig{width = 0.80\textwidth}{figs/db-si}
+	\begin{center}
+		声称实现了\blue{\bf 快照隔离} (Snapshot Isolation; SI)
+
+		\fig{width = 0.80\textwidth}{figs/db-si}
+	\end{center}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%
 \begin{frame}{}
-  \fig{width = 0.95\textwidth}{figs/db-si-violations}
+	\begin{center}
+		但是, 仍存在违反\blue{\bf 快照隔离}的\cyan{\bf 数据异常} (Data Anomalies) 情况
+
+		\fig{width = 0.95\textwidth}{figs/db-si-violations}
+	\end{center}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%
 \begin{frame}{}
-	\fig{width = 0.90\textwidth}{figs/problem}
+	\begin{center}
+		{\Large 黑盒测试: 数据库系统\red{\bf 执行历史}验证问题}
+
+		\fig{width = 0.90\textwidth}{figs/problem}
+	\end{center}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%
 
@@ -82,28 +94,28 @@
 %%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%
-\begin{frame}{}
-	\begin{center}
-		\fig{width = 1.00\textwidth}{figs/taps}
-	\end{center}
-\end{frame}
+% \begin{frame}{}
+% 	\begin{center}
+% 		\fig{width = 1.00\textwidth}{figs/taps}
+% 	\end{center}
+% \end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+% \begin{frame}{}
+% 	\begin{columns}
+% 		\column{0.50\textwidth}
+% 			\fig{width = 1.00\textwidth}{figs/taps}
+% 		\column{0.50\textwidth}
+% 			\fig{width = 1.00\textwidth}{figs/taps-vis}
+% 	\end{columns}
+% \end{frame}
 %%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%
 \begin{frame}{}
-	\begin{columns}
-		\column{0.50\textwidth}
-			\fig{width = 1.00\textwidth}{figs/taps}
-		\column{0.50\textwidth}
-			\fig{width = 1.00\textwidth}{figs/taps-vis}
-	\end{columns}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{}
 	\begin{center}
-		如何利用 \blue{\bf 数据异常}\red{\bf 全面、准确}地定义这些事务隔离级别
+		如何利用\blue{\bf 数据异常}\red{\bf 全面、准确}地定义这些事务隔离级别
 	\end{center}
 
 	\begin{center}
@@ -133,18 +145,8 @@
 
 %%%%%%%%%%%%%%%%%%%%
 \begin{frame}{}
-	\begin{columns}
-		\column{0.50\textwidth}
-			\fig{width = 1.00\textwidth}{figs/plume-time}
-			\begin{center}
-				时间
-			\end{center}
-		\column{0.50\textwidth}
-			\fig{width = 1.00\textwidth}{figs/plume-memory}
-			\begin{center}
-				内存
-			\end{center}
-	\end{columns}
+	\fig{width = 0.80\textwidth}{figs/plume-time}
+	\fig{width = 0.80\textwidth}{figs/plume-memory}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%
 
